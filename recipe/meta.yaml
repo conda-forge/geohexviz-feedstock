@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ea074fee272861bb6da901a4b796ab0ae48ec4eb0e2a302f0a80b2e5eeef4a80
 
 build:
-  number: 2
+  number: 3
   entry_points:
     - geohexsimple=geohexviz.simple:main
   script: {{ PYTHON }} -m pip install . -vv
